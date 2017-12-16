@@ -21,7 +21,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class InductionsRemoteDataSource implements InductionsDataSource{
+public class InductionsRemoteDataSource implements InductionsDataSource {
 
     private final JsonAdapter<InductionsResponse> mInductionsResponseJsonAdapter;
     private OkHttpClient mOkHttpClient;
@@ -59,7 +59,7 @@ public class InductionsRemoteDataSource implements InductionsDataSource{
                     Log.d("_DEBUG", "Induction response: " + mInductionsResponse.toString());
                 } catch (IOException e) {
                     e.printStackTrace();
-                }finally {
+                } finally {
                     if (mInductionsResponse != null) {
                         callback.onInductionsLoaded(mInductionsResponse.mInductionsList());
                     } else {

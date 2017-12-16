@@ -8,7 +8,7 @@ import javax.inject.Inject;
 
 import joaozao.sourcedev.com.retrospective.data.Induction;
 
-public class InductionsRepository implements InductionsDataSource{
+public class InductionsRepository implements InductionsDataSource {
 
     private InductionsDataSource mInductionsRemoteDataSource;
 
